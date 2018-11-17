@@ -12,3 +12,9 @@ class EmailParser
     delimited_emails = @emails.delete(",").split(" ").uniq
   end
 end  
+
+emails = "avi@test.com, arel@test.com test@avi.com, test@arel.com"
+EmailParser.new("avi@test.com")
+EmailParer.new("arel@test.com")
+EmailParser.new("test@avi.com")
+EmailParser.new("test@arel.com")
