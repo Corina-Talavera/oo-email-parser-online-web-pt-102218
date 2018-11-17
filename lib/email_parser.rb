@@ -8,9 +8,7 @@ class EmailParser
   def initialize(emails)
     @emails = emails
   end
-  def parser
-     csv_emails.split.collect do |address|
-      address.split(',')
-    end
+  def parse
+    delimited_emails = @emails.delete(",").split(" ").uniq
   end
 end  
