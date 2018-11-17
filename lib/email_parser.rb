@@ -9,5 +9,5 @@ class EmailParser
     @emails = emails
   end
   def parser
-    parser=
+    parser=EmailParser.new
 
